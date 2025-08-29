@@ -1,11 +1,20 @@
-
 let count = 0;
-document.getElementById('btn-heart')
+document.getElementById('btn-heart-copy')
     .addEventListener('click', function (e) {
         if (e.target.classList.contains('fa-heart')) {
             count++;
 
             document.getElementById('count').innerText = count;
+        }
+    })
+
+let count3 = 0;
+document.getElementById('btn-heart-copy')
+    .addEventListener('click', function (e) {
+        if (e.target.classList.contains('btn-copy')) {
+            count3++;
+
+            document.getElementById('count3').innerText = count3 + ' copy';
         }
     })
 
@@ -15,7 +24,7 @@ function callBtnClick(id, msg) {
 
             const count2 = Number(document.getElementById('count2').innerText)
 
-            if (e.target.classList.contains('btn-soft')) {
+            if (e.target.classList.contains('btn-call')) {
                 const totalCount2 = count2 - 20;
 
                 if (totalCount2 < 0) {
