@@ -63,6 +63,7 @@ function copyNum(btnId, numId) {
     document.getElementById(btnId).addEventListener('click', function() {
         const text = document.getElementById(numId).innerText;
         navigator.clipboard.writeText(text);
+        alert('Copied!');
     });
 }
 
