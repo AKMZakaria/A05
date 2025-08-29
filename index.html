@@ -22,22 +22,22 @@
             </div>
             <div class="flex gap-[20px]">
                 <div class="flex gap-[4px] bg-[#edfff1] w-[100px] h-[35px] rounded-4xl items-center justify-center">
-                    <p class="font-bold">0</p>
+                    <p id="count" class="font-bold">0</p>
                     <img class="h-[24px]" src="./assets/heart.png" alt="">
                 </div>
                 <div class="flex gap-[4px] bg-[#edfff1] w-[100px] h-[35px] rounded-4xl items-center justify-center">
-                    <p class="font-bold">100</p>
+                    <p id="count2" class="font-bold">100</p>
                     <img class="h-[22px]" src="./assets/coin.png">
                 </div>
                 <p
-                    class=" flex rounded-4xl w-[100px] h-[35px] items-center justify-center font-semibold bg-[#00a63e] text-white">
+                    class=" flex rounded-4xl w-[100px] h-[35px] items-center justify-center font-semibold bg-[#00a63e] text-white ">
                     0 copy</p>
             </div>
 
         </nav>
 
         <section
-            class="flex flex-col justify-center items-center p-[21px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-white">
+            class="flex flex-col justify-center items-center p-[21px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-white ">
             <img class="h-[75px] w-[75px]" src="./assets/logo-dark.png" alt="">
             <!-- <img class="h-[92px]" src="./assets/logo.png"> -->
             <h1 class="text-[25px] font-bold">Emergency Service Directory</h1>
@@ -49,7 +49,7 @@
     <main class="bg-[#f5fff6]">
         <section class="p-[58px]">
             <div class="flex justify-between gap-[40px]">
-                <div class="grid grid-cols-3 gap-[30px]">
+                <div id="btn-heart" class="grid grid-cols-3 gap-[30px]">
                     <!-- card-1  -->
                     <div
                         class="flex flex-col justify-between gap-[10px] w-[330px] h-[330px] p-[32px] bg-white rounded-[12px] shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
@@ -57,18 +57,11 @@
                             <div class="h-[45px] w-[45px] bg-[#ffe3e2] rounded-xl flex items-center justify-center">
                                 <img class="h-[24px]" src="./assets/emergency.png" alt="">
                             </div>
-                            <!-- <i class="fa-regular fa-heart text-2xl"></i> -->
-                            <button class="btn btn-circle">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="2.5" stroke="currentColor" class="size-[1.2em]">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                                </svg>
-                            </button>
+                            <button><i class="fa-regular fa-heart text-2xl cursor-pointer"></i></button>
                         </div>
                         <div>
                             <h2 class="text-[16px] font-bold">National Emergency Number</h2>
-                            <p class="text-[16px] text-[rgba(92,92,92,1)]">National Emergency</p>
+                            <p id="NE" class="text-[16px] text-[rgba(92,92,92,1)]">National Emergency</p>
                         </div>
                         <div>
                             <h2 class="text-[24px] font-bold">999</h2>
@@ -83,10 +76,9 @@
                                     class="fa-regular fa-copy"></i><span
                                     class="text-[rgba(92,92,92,1)]">Copy</span></button>
 
-                            <button style="height: 35px; border-radius: 10px; background-color: #00a63e"
+                            <button id="call1" style="height: 35px; border-radius: 10px ; background-color: #00a63e; color: white;; color: white;"
                                 class="btn btn-soft w-[120px]"><i
-                                    class="fa-solid fa-phone text-white text-[12px]"></i><span
-                                    class="text-white">Call</span></button>
+                                    class="fa-solid fa-phone text-[12px]"></i>Call</button>
 
                         </div>
                     </div>
@@ -97,14 +89,7 @@
                             <div class="h-[45px] w-[45px] bg-[#ffe3e2] rounded-xl flex items-center justify-center">
                                 <img class="h-[24px]" src="./assets/police.png" alt="">
                             </div>
-                            <!-- <i class="fa-regular fa-heart text-2xl"></i> -->
-                            <button class="btn btn-circle">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="2.5" stroke="currentColor" class="size-[1.2em]">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                                </svg>
-                            </button>
+                            <button><i class="fa-regular fa-heart text-2xl cursor-pointer"></i></button>
                         </div>
                         <div>
                             <h2 class="text-[18px] font-bold">Police Helpline Number</h2>
@@ -123,10 +108,9 @@
                                     class="fa-regular fa-copy"></i><span
                                     class="text-[rgba(92,92,92,1)]">Copy</span></button>
 
-                            <button style="height: 35px; border-radius: 10px; background-color: #00a63e"
+                            <button id="call2" style="height: 35px; border-radius: 10px ; background-color: #00a63e; color: white;; color: white"
                                 class="btn btn-soft w-[120px]"><i
-                                    class="fa-solid fa-phone text-white text-[12px]"></i><span
-                                    class="text-white">Call</span></button>
+                                    class="fa-solid fa-phone text-[12px]"></i>Call</button>
 
                         </div>
                     </div>
@@ -137,14 +121,7 @@
                             <div class="h-[45px] w-[45px] bg-[#ffe3e2] rounded-xl flex items-center justify-center">
                                 <img class="h-[24px]" src="./assets/fire-service.png" alt="">
                             </div>
-                            <!-- <i class="fa-regular fa-heart text-2xl"></i> -->
-                            <button class="btn btn-circle">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="2.5" stroke="currentColor" class="size-[1.2em]">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                                </svg>
-                            </button>
+                            <button><i class="fa-regular fa-heart text-2xl cursor-pointer"></i></button>
                         </div>
                         <div>
                             <h2 class="text-[18px] font-bold">Fire Service Number</h2>
@@ -154,7 +131,7 @@
                             <h2 class="text-[26px] font-bold">999</h2>
                             <p
                                 class="text-[rgba(92,92,92,1)] bg-[#f2f2f2] rounded-3xl w-[55px] h-[32px] flex justify-center items-center">
-                                All</p>
+                                Fire</p>
                         </div>
                         <div class="flex gap-[15px]">
 
@@ -163,10 +140,9 @@
                                     class="fa-regular fa-copy"></i><span
                                     class="text-[rgba(92,92,92,1)]">Copy</span></button>
 
-                            <button style="height: 35px; border-radius: 10px; background-color: #00a63e"
+                            <button id="call3" style="height: 35px; border-radius: 10px ; background-color: #00a63e; color: white;"
                                 class="btn btn-soft w-[120px]"><i
-                                    class="fa-solid fa-phone text-white text-[12px]"></i><span
-                                    class="text-white">Call</span></button>
+                                    class="fa-solid fa-phone   text-[12px]"></i> Call</button>
 
                         </div>
                     </div>
@@ -177,14 +153,9 @@
                             <div class="h-[45px] w-[45px] bg-[#ffe3e2] rounded-xl flex items-center justify-center">
                                 <img class="h-[24px]" src="./assets/ambulance.png" alt="">
                             </div>
-                            <!-- <i class="fa-regular fa-heart text-2xl"></i> -->
-                            <button class="btn btn-circle">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="2.5" stroke="currentColor" class="size-[1.2em]">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                                </svg>
-                            </button>
+                            <button><i class="fa-regular fa-heart text-2xl cursor-pointer"></i></button>
+
+
                         </div>
                         <div>
                             <h2 class="text-[18px] font-bold">Ambulance Service</h2>
@@ -203,10 +174,9 @@
                                     class="fa-regular fa-copy"></i><span
                                     class="text-[rgba(92,92,92,1)]">Copy</span></button>
 
-                            <button style="height: 35px; border-radius: 10px; background-color: #00a63e"
+                            <button id="call4" style="height: 35px; border-radius: 10px ; background-color: #00a63e; color: white;"
                                 class="btn btn-soft w-[120px]"><i
-                                    class="fa-solid fa-phone text-white text-[12px]"></i><span
-                                    class="text-white">Call</span></button>
+                                    class="fa-solid fa-phone   text-[12px]"></i> Call</button>
 
                         </div>
                     </div>
@@ -217,14 +187,7 @@
                             <div class="h-[45px] w-[45px] bg-[#ffe3e2] rounded-xl flex items-center justify-center">
                                 <img class="h-[24px]" src="./assets/emergency.png" alt="">
                             </div>
-                            <!-- <i class="fa-regular fa-heart text-2xl"></i> -->
-                            <button class="btn btn-circle">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="2.5" stroke="currentColor" class="size-[1.2em]">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                                </svg>
-                            </button>
+                            <button><i class="fa-regular fa-heart text-2xl cursor-pointer"></i></button>
                         </div>
                         <div>
                             <h2 class="text-[18px] font-bold">Women & Child Helpline</h2>
@@ -243,10 +206,9 @@
                                     class="fa-regular fa-copy"></i><span
                                     class="text-[rgba(92,92,92,1)]">Copy</span></button>
 
-                            <button style="height: 35px; border-radius: 10px; background-color: #00a63e"
+                            <button id="call5" style="height: 35px; border-radius: 10px ; background-color: #00a63e; color: white;"
                                 class="btn btn-soft w-[120px]"><i
-                                    class="fa-solid fa-phone text-white text-[12px]"></i><span
-                                    class="text-white">Call</span></button>
+                                    class="fa-solid fa-phone   text-[12px]"></i> Call</button>
 
                         </div>
                     </div>
@@ -257,14 +219,7 @@
                             <div class="h-[45px] w-[45px] bg-[#ffe3e2] rounded-xl flex items-center justify-center">
                                 <img class="h-[24px]" src="./assets/emergency.png" alt="">
                             </div>
-                            <!-- <i class="fa-regular fa-heart text-2xl"></i> -->
-                            <button class="btn btn-circle">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="2.5" stroke="currentColor" class="size-[1.2em]">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                                </svg>
-                            </button>
+                            <button><i class="fa-regular fa-heart text-2xl cursor-pointer"></i></button>
                         </div>
                         <div>
                             <h2 class="text-[18px] font-bold">Anti-Corruption Helpline</h2>
@@ -283,10 +238,9 @@
                                     class="fa-regular fa-copy"></i><span
                                     class="text-[rgba(92,92,92,1)]">Copy</span></button>
 
-                            <button style="height: 35px; border-radius: 10px; background-color: #00a63e"
+                            <button id="call6" style="height: 35px; border-radius: 10px ; background-color: #00a63e; color: white;"
                                 class="btn btn-soft w-[120px]"><i
-                                    class="fa-solid fa-phone text-white text-[12px]"></i><span
-                                    class="text-white">Call</span></button>
+                                    class="fa-solid fa-phone   text-[12px]"></i> Call</button>
 
                         </div>
                     </div>
@@ -297,14 +251,7 @@
                             <div class="h-[45px] w-[45px] bg-[#ffe3e2] rounded-xl flex items-center justify-center">
                                 <img class="h-[24px]" src="./assets/emergency.png" alt="">
                             </div>
-                            <!-- <i class="fa-regular fa-heart text-2xl"></i> -->
-                            <button class="btn btn-circle">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="2.5" stroke="currentColor" class="size-[1.2em]">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                                </svg>
-                            </button>
+                            <button><i class="fa-regular fa-heart text-2xl cursor-pointer"></i></button>
                         </div>
                         <div>
                             <h2 class="text-[18px] font-bold">Electricity Helpline</h2>
@@ -323,10 +270,9 @@
                                     class="fa-regular fa-copy"></i><span
                                     class="text-[rgba(92,92,92,1)]">Copy</span></button>
 
-                            <button style="height: 35px; border-radius: 10px; background-color: #00a63e"
+                            <button id="call7" style="height: 35px; border-radius: 10px ; background-color: #00a63e; color: white;"
                                 class="btn btn-soft w-[120px]"><i
-                                    class="fa-solid fa-phone text-white text-[12px]"></i><span
-                                    class="text-white">Call</span></button>
+                                    class="fa-solid fa-phone   text-[12px]"></i> Call</button>
 
                         </div>
                     </div>
@@ -337,14 +283,7 @@
                             <div class="h-[45px] w-[45px] bg-[#ffe3e2] rounded-xl flex items-center justify-center">
                                 <img class="h-[24px]" src="./assets/brac.png" alt="">
                             </div>
-                            <!-- <i class="fa-regular fa-heart text-2xl"></i> -->
-                            <button class="btn btn-circle">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="2.5" stroke="currentColor" class="size-[1.2em]">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                                </svg>
-                            </button>
+                            <button><i class="fa-regular fa-heart text-2xl cursor-pointer"></i></button>
                         </div>
                         <div>
                             <h2 class="text-[18px] font-bold">Brac Helpline</h2>
@@ -363,10 +302,9 @@
                                     class="fa-regular fa-copy"></i><span
                                     class="text-[rgba(92,92,92,1)]">Copy</span></button>
 
-                            <button style="height: 35px; border-radius: 10px; background-color: #00a63e"
+                            <button id="call8" style="height: 35px; border-radius: 10px ; background-color: #00a63e; color: white;"
                                 class="btn btn-soft w-[120px]"><i
-                                    class="fa-solid fa-phone text-white text-[12px]"></i><span
-                                    class="text-white">Call</span></button>
+                                    class="fa-solid fa-phone   text-[12px]"></i> Call</button>
 
                         </div>
                     </div>
@@ -377,14 +315,7 @@
                             <div class="h-[45px] w-[45px] bg-[#ffe3e2] rounded-xl flex items-center justify-center">
                                 <img class="h-[24px]" src="./assets/Bangladesh-Railway.png" alt="">
                             </div>
-                            <!-- <i class="fa-regular fa-heart text-2xl"></i> -->
-                            <button class="btn btn-circle">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="2.5" stroke="currentColor" class="size-[1.2em]">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                                </svg>
-                            </button>
+                            <button><i class="fa-regular fa-heart text-2xl cursor-pointer"></i></button>
                         </div>
                         <div>
                             <h2 class="text-[18px] font-bold">Bangladesh Railway Helpline</h2>
@@ -403,10 +334,9 @@
                                     class="fa-regular fa-copy"></i><span
                                     class="text-[rgba(92,92,92,1)]">Copy</span></button>
 
-                            <button style="height: 35px; border-radius: 10px; background-color: #00a63e"
+                            <button id="call9" style="height: 35px; border-radius: 10px ; background-color: #00a63e; color: white;"
                                 class="btn btn-soft w-[120px]"><i
-                                    class="fa-solid fa-phone text-white text-[12px]"></i><span
-                                    class="text-white">Call</span></button>
+                                    class="fa-solid fa-phone   text-[12px]"></i> Call</button>
 
                         </div>
                     </div>
@@ -414,9 +344,10 @@
 
                 <div class=" p-[24px] bg-white w-[340px] rounded-[12px] shadow-[0_4px_6px_rgba(0,0,0,.1)]">
                     <div class="flex items-center justify-between ">
-                        <h2 class="font-medium"><i style="color: rgba(92,92,92,1);" class="fa-regular fa-clock"></i> Call History</h2>
-                        <button style="height: 35px; width: 85px; border-radius: 24px; background-color: #00a63e" class="btn btn-soft"><span
-                                class="text-white">Clear</span></button>
+                        <h2 class="font-medium"><i style="color: rgba(92,92,92,1);" class="fa-regular fa-clock"></i>
+                            Call History</h2>
+                        <button style="height: 35px; width: 85px; border-radius: 24px ; background-color: #00a63e; color: white;"
+                            class="btn btn-soft"><span class=" ">Clear</span></button>
 
                     </div>
                 </div>
@@ -426,6 +357,8 @@
         </section>
     </main>
 
+    <!-- link to js -->
+    <script src="./index.js"></script>
 
 </body>
 
