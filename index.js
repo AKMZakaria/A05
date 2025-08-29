@@ -19,7 +19,7 @@ function callBtnClick(id, msg) {
                 const totalCount2 = count2 - 20;
 
                 if (totalCount2 < 0) {
-                    alert('Not Enough Coin');
+                    alert('⚠️ Not Enough Coin');
                     return;
                 }
                 document.getElementById('count2').innerText = totalCount2;
@@ -31,15 +31,15 @@ function callBtnClick(id, msg) {
 
 }
 
-callBtnClick('call1', 'Calling 999 - National Emergency')
-callBtnClick('call2', 'Calling 999 - Police')
-callBtnClick('call3', 'Calling 999 - Fire Service')
-callBtnClick('call4', 'Calling 1994-999999 - Ambulance')
-callBtnClick('call5', 'Calling 109 - Women & Child Helpline')
-callBtnClick('call6', 'Calling 106 - Anti-Corruption')
-callBtnClick('call7', 'Calling 16216 - Electricity Outage')
-callBtnClick('call8', 'Calling 16445 - Brac Helpline')
-callBtnClick('call9', 'Calling 163 - Bangladesh Railway')
+callBtnClick('call1', '📞 Calling 999 - National Emergency')
+callBtnClick('call2', '📞 Calling 999 - Police')
+callBtnClick('call3', '📞 Calling 999 - Fire Service')
+callBtnClick('call4', '📞 Calling 1994-999999 - Ambulance')
+callBtnClick('call5', '📞 Calling 109 - Women & Child Helpline')
+callBtnClick('call6', '📞 Calling 106 - Anti-Corruption')
+callBtnClick('call7', '📞 Calling 16216 - Electricity Outage')
+callBtnClick('call8', '📞 Calling 16445 - Brac Helpline')
+callBtnClick('call9', '📞 Calling 163 - Bangladesh Railway')
 
 
 
